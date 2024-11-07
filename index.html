@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Ori Chat</title>
+</head>
+
+<body>
+
+    <!-- 이름 입력 화면 -->
+    <div class="name-container" id="name-container" style="display: block;">
+        <h2>채팅에 사용될 이름을 입력해주세요</h2>
+        <input type="text" id="name-input" placeholder="Your name...">
+        <button id="start-chat">Start Chat</button>
+    </div>
+
+    <!-- 채팅 화면과 참여자 리스트를 묶는 래퍼 -->
+    <div class="chat-wrapper">
+        <!-- 채팅 화면 -->
+        <div class="chat-container" id="chat-container" style="display: none;">
+            <div class="chat-header">
+                <strong>Chat Room</strong>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <p class="notice"><strong>🔉새로운 채팅이 시작되었습니다. 재미있게 즐겨주세요!</strong></p>
+            </div>
+            <form class="chat-form" id="chat-form">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Type a message...">
+                <button type="submit" class="send-button">Send</button>
+            </form>
+        </div>
+
+        <!-- 참여자 화면 -->
+        <div class="participant-container" id="participant-container">
+            <h3>채팅 참여자</h3>
+            <ul id="participant-list">
+                <li id="my-name"></li>
+                <li id="other-user-name">jiwoo</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
