@@ -1,0 +1,137 @@
+body {
+    font-family: "Poor Story", system-ui, '맑은 고딕', verdana;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.name-container {
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.name-container input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.name-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-wrapper {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    flex-wrap: wrap;
+}
+
+.chat-container {
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.chat-messages {
+    height: 300px;
+    padding: 10px 15px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.chat-messages p {
+    margin: 6px 0;
+}
+
+.notice {
+    font-size: 15px;
+    color: #464646;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.chat-form {
+    display: flex;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    outline: none;
+    font-family: "Poor Story", system-ui, '맑은 고딕', verdana;
+    font-size: 15px;
+}
+
+.participant-container {
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    width: 200px;
+    height: 130px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.participant-container h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #007bff;
+}
+
+#participant-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 17px;
+    color: #464646;
+}
+
+#participant-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
